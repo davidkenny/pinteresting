@@ -8,11 +8,17 @@ un clon de pinterest
 <p>
 	<em>(en español)</em>
 </p>
-<p>
-<h2>Iniciar sesión o registrarse</h2>
-</p>
-<p>
-	<%= link_to "Iniciar sesión", "#", class: "btn btn-default btn-lg" %>
-	<%= link_to "Registrarse", "#", class: "btn btn-primary btn-lg" %> 
-</p>
+
+<% if user_signed_in? %>
+<h3><strong>Make yourself at home</strong></h3>
+<% else %>	
+
+	<p>
+		<h2>Iniciar sesión o registrarse</h2>
+	</p>
+	<p>
+		<%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-default btn-lg" %>
+		<%= link_to "Registrarse", new_user_registration_path, class: "btn btn-primary btn-lg" %> 
+	</p>
+<% end %>
 </div>
