@@ -33,6 +33,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# Devise gem via http://rubygems.org/gems/devise
+gem "devise", "~> 3.2.2"
+
 group :development, :test do  # sql3 will be used for local dev and testing 
 	gem 'sqlite3'
 end
