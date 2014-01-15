@@ -1,4 +1,4 @@
-Git
+Git:
 
 1  git add .
 
@@ -10,3 +10,20 @@ Git
 Embedded Ruby - Links
 
 <%= link_to “anchor_text”, “URL” %>
+
+Heroku:
+
+1. git push heroku master
+2. heroku open   #opens in browser
+
+Installing new gems:
+
+bundle install
+
+   then git
+
+1  git add .
+
+2  git commit -am “write message”
+
+3  git push origin master
